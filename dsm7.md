@@ -78,7 +78,7 @@ i2cset -y -f 0 0x45 0x33 0x73 #呼吸
 i2cset -y -f 0 0x45 0x3d 0x55
 i2cset -y -f 0 0x45 0x3e 0x55
 i2cset -y -f 0 0x45 0x36 200
-echo 0 > /sys/class/gpio/gpio450/value      
+echo 0 > /sys/class/gpio/gpio450/value
 fi
 if [ \$sata = active/idle ];then
 sata_temp="\$(smartctl -a /dev/hda -d ata | sed -n '/Temperature_Celsius/p' | awk '{print \$10}')"
