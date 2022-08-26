@@ -10,7 +10,7 @@ sed -i -- 's/58/68/g' /usr/syno/etc.defaults/scemd.xml
 ### 修复软件中心空白
 
 ```
-sed  -i  's/supportsystempwarning="yes"/supportsystempwarning="no"/g' /etc.defaults/synoinfo.conf 
+sed  -i  's/supportsystempwarning="yes"/supportsystempwarning="no"/g' /etc.defaults/synoinfo.conf
 ```
 
 ### 修复cpu占用高，添加开机计划
